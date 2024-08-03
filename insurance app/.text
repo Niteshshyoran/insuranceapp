@@ -1,0 +1,15 @@
+
+# serializer
+ 
+# def create(self,validated_data):
+#     password = validated_data.pop('password',None)
+
+{
+    "username":"nitesh",
+    "password":"Cap@123"
+} 
+
+{
+    "username":"ankit",
+    "password":"Cap@333"
+}
