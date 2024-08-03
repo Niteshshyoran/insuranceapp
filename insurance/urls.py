@@ -1,11 +1,12 @@
 from django.urls import path, include
 # from rest_framework.routers import DefaultRouter
-from .views import RegisterView,LoginView,CompanyRegisterView,CompanyUpdateView,PolicyRegisterView,PolicyUpdateView,ClaimRegisterView,ClaimUpdateView,PaymentRegisterView,PaymentUpdateView
+from .views import RegisterView,LoginView,CompanyRegisterView,CompanyUpdateView,PolicyRegisterView,PolicyUpdateView,ClaimRegisterView,ClaimUpdateView,PaymentRegisterView,PaymentUpdateView,PasswordResetRequestView
 
 # router = DefaultRouter()
 # router.register(r'customers', CustomerViewSet)
 
 urlpatterns = [
+    # path('resetpassword/', PasswordResetRequestView.as_view(),name='reset'),
     path('register/', RegisterView.as_view(), name='register'),
     path('login/', LoginView.as_view(),name = "login"),
     path('company/', CompanyRegisterView.as_view(),name = 'company'),

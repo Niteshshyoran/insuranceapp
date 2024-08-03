@@ -10,6 +10,12 @@ from rest_framework.generics import ListAPIView,CreateAPIView,UpdateAPIView,Dest
 import jwt,datetime
 # Create your views here.
 
+
+# class PasswordResetRequestView(APIView):
+#     def post(self,requst):
+#         email = requst.data['email']
+#         return Response('ok')
+
 class RegisterView(APIView):
     def post(self, request):
         serializer = UserSerializer(data=request.data)

@@ -11,7 +11,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = '__all__'
         extra_kwagrs = {'password':{'write_only':True}}
-
+    #making token
     def create(self, validated_data):
         isinstance = self.Meta.model(**validated_data)
         password = validated_data.pop('password',None)
